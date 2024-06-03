@@ -36,3 +36,282 @@
     transform: rotate(360deg);
   }
 }
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Button Container */
+.modal-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.modal-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-button-ok {
+  background-color: green;
+  color: white;
+}
+
+.modal-button-ok:hover {
+  background-color: darkgreen;
+}
+
+
+.modal-button-cancel {
+  background-color: blue;
+  color: white;
+}
+
+.modal-button-cancel:hover {
+  background-color: darkblue;
+}
+
+.modal-button:hover {
+  opacity: 0.8;
+}
+
+.table-row:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+ /* css used in the EmployeeForm starts here */
+ /* Form Container */
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Form Group Label */
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Form Group Input */
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Submit Button */
+.button-submit {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-submit:hover {
+  background-color: darkgreen;
+}
+
+/* Back Button */
+.button-back {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-back:hover {
+  background-color: darkblue;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* css used in the EmployeeForm ends here */
+
+/* General Container Styling */
+.container {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* css used in the EmployeeTable starts here */
+ /* Table Styling */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.table-row:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Button Styling */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.button-add {
+  background-color: green;
+  color: white;
+}
+
+.button-edit {
+  background-color: blue;
+  color: white;
+}
+
+.button-edit:hover {
+  background-color: darkblue;
+}
+
+.button-delete {
+  background-color: red;
+  color: white;
+}
+
+.button-delete:hover {
+  background-color: darkred;
+}
+
+/* Pagination Styling */
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add spacing between pagination buttons */
+  margin-bottom: 20px;
+}
+
+.pagination-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsive Form Styling */
+@media (max-width: 768px) {
+  .form-container {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .form-group {
+      flex-direction: column;
+  }
+
+  .button-container {
+      flex-direction: column;
+  }
+
+  .pagination-container {
+    justify-content: center;
+}
+}
+/* css used in the EmployeeTable ends here */
+
+/* src/components/EmployeeForm.css */
+.success-message {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  z-index: 1000;
+  max-width: 90%;
+  text-align: center;
+}
+

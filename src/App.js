@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Home from './components/Home';
+import EmployeeForm from './components/EmployeeForm';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Employee } from './models/Employee';
+import { createEmployee, updateEmployee } from './services/employeeService';
+import Header from './components/Header';
 
-function App() {
+const App = () => {
+  const handleFormSubmit = async (data) => {
+      if (data.id) {
+          await updateEmployee(data);
+      } else {
+          await createEmployee(data);
+      }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Header />
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/employee/new" element={<EmployeeForm mode="create" onSubmit={handleFormSubmit} />} />
+              <Route path="/employee/edit/:id" element={<EmployeeForm mode="edit" onSubmit={handleFormSubmit} />} />
+              <Route path="/employee/view/:id" element={<EmployeeForm mode="view" onSubmit={handleFormSubmit} />} />
+          </Routes>
+      </Router>
   );
-}
+};
+
+
 
 export default App;
