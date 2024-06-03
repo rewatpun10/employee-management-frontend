@@ -80,11 +80,17 @@ The search results are also paginated, similar to the main employee list.
 The frontend application interacts with the following backend API endpoints:
 
 GET /api/employees - Retrieve all employees
+
 GET /api/employees/{id} - Retrieve an employee by ID
+
 POST /api/employees - Create a new employee
+
 PUT /api/employees/{id} - Update an existing employee
+
 DELETE /api/employees/{id} - Delete an employee
+
 GET /api/departments - Retrieve all departments
+
 GET /api/employees/search - Search employees by name with pagination
 
 Ensure your backend server is running and accessible at http://localhost:8080.
