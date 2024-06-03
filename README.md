@@ -42,37 +42,57 @@ Home Page
 The home page displays a list of all employees with pagination and a search feature.
 
 //Pagination
+
 The employee list is paginated, displaying 10 employees per page.
+
 When there are more than 10 employees, additional pages are added.
+
 For example, if there are 50 employees, the pagination will include 5 pages, each showing 10 employees.
+
 Users can navigate between pages using the "Previous" and "Next" buttons, or by clicking on the specific page numbers.
 
 // Adding an Employee
+
 Click on the "Add Employee" button on the home page.
+
 Fill in the employee details in the form.
+
 Click "Submit" to save the new employee.
+
 A success message will be displayed, and you will be redirected to the home page.
 
 
 // Editing an Employee
+
 Click the "Edit" button next to the employee you want to edit.
+
 Update the employee details in the form.
+
 Click "Submit" to save the changes.
+
 A success message will be displayed, and you will be redirected to the home page.
 
 
 // Viewing an Employee
+
 Click the "View" button next to the employee you want to view.
+
 The employee details will be displayed in a read-only format.
 
 // Deleting an Employee
+
 Click the "Delete" button next to the employee you want to delete.
+
 Confirm the deletion in the confirmation modal.
+
 The employee will be deleted, and the list will be updated.
 
 // Searching Employees
+
 The home page includes a search field to filter employees by their name.
+
 As you type in the search field, it performs a search on the backend to fetch and display the relevant employees.
+
 The search results are also paginated, similar to the main employee list.
 
 ## api-endpoints
