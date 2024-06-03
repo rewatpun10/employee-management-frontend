@@ -38,10 +38,11 @@ Follow these steps to install the necessary dependencies and set up the applicat
 
 ## usage
 
-Home Page
+//**Home Page**
+
 The home page displays a list of all employees with pagination and a search feature.
 
-//Pagination
+//**Pagination**
 
 The employee list is paginated, displaying 10 employees per page.
 
@@ -51,7 +52,7 @@ For example, if there are 50 employees, the pagination will include 5 pages, eac
 
 Users can navigate between pages using the "Previous" and "Next" buttons, or by clicking on the specific page numbers.
 
-// Adding an Employee
+// **Adding an Employee**
 
 Click on the "Add Employee" button on the home page.
 
@@ -62,7 +63,7 @@ Click "Submit" to save the new employee.
 A success message will be displayed, and you will be redirected to the home page.
 
 
-// Editing an Employee
+// **Editing an Employee**
 
 Click the "Edit" button next to the employee you want to edit.
 
@@ -73,13 +74,13 @@ Click "Submit" to save the changes.
 A success message will be displayed, and you will be redirected to the home page.
 
 
-// Viewing an Employee
+// **Viewing an Employee**
 
 Click the "View" button next to the employee you want to view.
 
 The employee details will be displayed in a read-only format.
 
-// Deleting an Employee
+// **Deleting an Employee**
 
 Click the "Delete" button next to the employee you want to delete.
 
@@ -87,7 +88,7 @@ Confirm the deletion in the confirmation modal.
 
 The employee will be deleted, and the list will be updated.
 
-// Searching Employees
+// **Searching Employees**
 
 The home page includes a search field to filter employees by their name.
 
